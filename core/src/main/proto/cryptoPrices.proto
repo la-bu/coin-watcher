@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "de.novatec.CryproPrices";
+option java_outer_classname = "CryproPricesProto";
+
+package CryptoPrices;
+
+service Crypto {
+  rpc getCurrentPrice (CryptoRequest) returns (CurrentPriceResponse){}
+  rpc getPriceHistory (CryptoRequest) returns (stream PriceHistoryResponse){}
+}
+
+message CryptoRequest {
+  string symbol = 1;
+}
+
+message CurrentPriceResponse {
+  double price = 1;
+}
+
+message PriceHistoryResponse {
+  string symbol = 1;
+  double price = 2;
+  string timestamp = 3;
+}
+

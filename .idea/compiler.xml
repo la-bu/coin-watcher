@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="consumer-client.integrationTest" target="17" />
+      <module name="consumer-client.main" target="17" />
+      <module name="consumer-client.native-test" target="17" />
+      <module name="consumer-client.quarkus-generated-sources" target="17" />
+      <module name="consumer-client.quarkus-test-generated-sources" target="17" />
+      <module name="consumer-client.test" target="17" />
+      <module name="service-client.integrationTest" target="17" />
+      <module name="service-client.main" target="17" />
+      <module name="service-client.native-test" target="17" />
+      <module name="service-client.quarkus-generated-sources" target="17" />
+      <module name="service-client.quarkus-test-generated-sources" target="17" />
+      <module name="service-client.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
